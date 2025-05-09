@@ -1,16 +1,36 @@
-# tap_the_dot
+# Tap the Dot
 
-A new Flutter project.
+A simple, fun Flutter game for Android. Tap the colored dot as fast as you can before it disappears! Tracks your score, reaction time, and high score offline.
 
-## Getting Started
+## Game Mechanics
+- A colored dot appears randomly on the screen.
+- Tap the dot before it vanishes (~1.5s) to score!
+- Miss a dot, and you'll see a brief 'Miss' animation.
+- Game lasts 20 rounds. High scores saved on your device.
+- View your score, last reaction time, and try to beat your record.
 
-This project is a starting point for a Flutter application.
+## How to Run
+1. Ensure you have Flutter installed for Android.
+2. Clone/download this repo.
+3. In terminal, run:
 
-A few resources to get you started if this is your first Flutter project:
+```shell
+flutter clean && flutter pub get && flutter run -d emulator-5554
+```
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+This runs the app on the default Android emulator.
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Features
+- Smooth animations & clean, colorful UI
+- Local state management with Riverpod
+- Fun score transitions
+- High score persistence (no online connectivity needed)
+- All icons and sounds are included locally (see /assets)
+
+## Optional Features
+- [ ] Difficulty scaling
+- [ ] Sound effects for hits/misses (assets included if you want to use them)
+- [ ] Timer mode, local leaderboard (community contributions welcome)
+
+---
+**Made with Flutter**
